@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="34dp"
         android:ems="10"
+        android:hint="Ingrese una contraseña"
         android:inputType="textPassword"
         app:layout_constraintStart_toStartOf="@+id/edt_signin_mail"
         app:layout_constraintTop_toBottomOf="@+id/edt_signin_mail" />
@@ -22,6 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="63dp"
         android:ems="10"
+        android:hint="Ingrese su correo"
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
