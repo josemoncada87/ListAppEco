@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="co.edu.icesi.dmi.ecosistemas.listappeco.activities.EditItemActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/tv_edit_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="55dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="34dp"
+        android:text="¿Deseas editar este item?"
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/edt_edit_item_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_edit_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="21dp"
+        android:ems="10"
+        android:hint="nombre"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/edt_edit_item_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_edit_item_title" />
+
+    <EditText
+        android:id="@+id/edt_edit_item_description"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="39dp"
+        android:ems="10"
+        android:hint="descripción"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/check_edit_item_checkbox"
+        app:layout_constraintStart_toStartOf="@+id/edt_edit_item_name"
+        app:layout_constraintTop_toBottomOf="@+id/edt_edit_item_name" />
+
+    <CheckBox
+        android:id="@+id/check_edit_item_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="45dp"
+        android:text="¿Completado?"
+        app:layout_constraintBottom_toTopOf="@+id/btn_edit_item_cancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_edit_item_description" />
+
+    <Button
+        android:id="@+id/btn_edit_item_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="35dp"
+        android:layout_marginEnd="4dp"
+        android:text="Cancelar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_edit_item_save"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/check_edit_item_checkbox" />
+
+    <Button
+        android:id="@+id/btn_edit_item_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="35dp"
+        android:layout_marginEnd="8dp"
+        android:text="Guardar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_edit_item_cancel" />
+
+</android.support.constraint.ConstraintLayout>
